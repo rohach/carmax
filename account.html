@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - Red store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="icon" href="./images/l.png" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/l.png"
+                alt=""
+                style="width: 4em; height: 3.5em; margin-left: 0.3em"
+              />
+            </a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="search.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="addcar.html">Add Car</a></li>
+              <li><a href="account.html">Account</a></li>
+              <!-- TODo: 22:20 -->
+            </ul>
+          </nav>
+
+          <img
+            src="images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Navigation ends here -->
+    <!-- Account Page -->
+
+    <div class="account-page">
+      <div class="login-wrap">
+        <div class="login-html">
+          <input
+            id="tab-1"
+            type="radio"
+            name="tab"
+            class="sign-in"
+            checked
+            onclick="selectText()"
+          /><label for="tab-1" class="tab">Sign In</label>
+          <input id="tab-2" type="radio" name="tab" class="sign-up" /><label
+            for="tab-2"
+            class="tab"
+            >Sign Up</label
+          >
+          <div class="login-form">
+            <div class="sign-in-htm">
+              <div class="group">
+                <label for="user" class="label">Username</label>
+                <input id="user" type="text" class="input" required />
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Password</label>
+                <input
+                  id="pass"
+                  type="password"
+                  class="input"
+                  data-type="password"
+                  required
+                  onclick="selectText()"
+                />
+              </div>
+              <div class="group">
+                <input id="check" type="checkbox" class="check" checked />
+                <label for="check"
+                  ><span class="icon"></span> Keep me Signed in</label
+                >
+              </div>
+              <div class="group">
+                <input type="submit" class="button" value="Sign In" />
+              </div>
+              <div class="hr"></div>
+              <div class="foot-lnk">
+                <a href="#forgot">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="sign-up-htm">
+              <form action="post">
+                <div class="group">
+                  <label for="user" class="label">Name</label>
+                  <input
+                    id="user"
+                    type="text"
+                    class="input"
+                    maxlength="8"
+                    minlength="4"
+                    required
+                  />
+                </div>
+                <div class="group">
+                  <label for="user" class="label">Address</label>
+                  <input id="user" type="text" class="input" required />
+                </div>
+                <div class="group">
+                  <label for="user" class="label">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="input"
+                    pattern="[0-9]{3}[0-9]{7}"
+                    required
+                  />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">Email Address</label>
+                  <input id="pass" type="email" class="input" required />
+                </div>
+                <div class="group">
+                  <label for="user" class="label">Username</label>
+                  <input id="user" type="text" class="input" required />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">Password</label>
+                  <input
+                    id="pass"
+                    type="password"
+                    class="input"
+                    data-type="password"
+                    required
+                  />
+                </div>
+                <div class="group">
+                  <input type="submit" class="button" value="Sign Up" />
+                </div>
+                <div class="hr"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br /><br /><br /><br /><br />
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Download App for Android <br />
+              and ios mobile phone
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/l.png" alt="" style="width: 5em; height: 4.5em" />
+            <p>
+              Your trust is all we want. <br />
+              Find your next vehicle.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="/" style="color: #8a8a8a">Coupons</a></li>
+              <li><a href="/" style="color: #8a8a8a">Blog Post</a></li>
+              <li><a href="/" style="color: #8a8a8a">Return Policy</a></li>
+              <li><a href="/" style="color: #8a8a8a">Join Affiliate</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href="/" style="color: #8a8a8a">Facebook</a></li>
+              <li><a href="/" style="color: #8a8a8a">Twitter</a></li>
+              <li><a href="/" style="color: #8a8a8a">Instagram</a></li>
+              <li><a href="/" style="color: #8a8a8a">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Copyright 2022 -
+          <a href="/" style="color: #8a8a8a"><strong>Car-Max</strong></a>
+        </p>
+      </div>
+    </div>
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script>
+      function changeColor() {
+        $('input[name="tab"]').css("backgroundColor", "red");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - Car-Max</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="icon" href="./images/l.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="./images//l.png"
+              alt=""
+              style="height: 3.5em; width: 4em; margin-left: 0.3em"
+            />
+            <br /><span style="color: #ff523b"><strong>Car-Max</strong></span>
+          </a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="addcar.html">Add Car</a></li>
+            <li><a href="account.html">Account</a></li>
+            <!-- TODo: 22:20 -->
+          </ul>
+        </nav>
+
+        <img
+          src="images/menu.png"
+          alt=""
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+    <!-- About Section Start From here -->
+
+    <section id="about-section">
+      <!-- about left  -->
+      <div class="about-left">
+        <img src="./images/l.png" width="350px" class="about-us-image" />
+      </div>
+
+      <!-- about right  -->
+      <div class="about-right">
+        <h4>Our Story</h4>
+        <h1>About Us</h1>
+        <p>
+          At CarMax, our commitment to innovation and iconic customer
+          experiences have made us the nation’s largest retailer of used cars.
+          As the original disruptor of the automotive industry, our “no-haggle”
+          prices transformed car buying and selling from a stressful, dreaded
+          event into the honest, straightforward experience all people deserve.
+          We’ve been raising the bar on customer  experiences ever since.
+          <br />
+          Today, our customers have the ability to buy completely on their
+          terms, whether that’s online, in the store, or using a seamless
+          combination of both. Couple our flexibility with our industry-leading
+          Love Your Car Guarantee (learn more), including 24-hour test drives
+          and 30-day returns (up to 1500 mi.), and today we’re delivering iconic
+          car buying experiences unlike any you’ve seen before.
+        </p>
+        <div class="address">
+          <ul>
+            <li>
+              <span class="address-logo">
+                <i class="fa fa-paper-plane"></i>
+              </span>
+              <p>Address</p>
+              <span class="saprater">:</span>
+              <p>Jaipur, Rajasthan, India</p>
+            </li>
+            <li>
+              <span class="address-logo">
+                <i class="fa fa-phone"></i>
+              </span>
+              <p>Phone No</p>
+              <span class="saprater">:</span>
+              <p>+91 987-654-4321</p>
+            </li>
+            <li>
+              <span class="address-logo">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <p>Email ID</p>
+              <span class="saprater">:</span>
+              <p>crowncoder@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <div class="expertise">
+          <h3>Our Team</h3>
+          <div class="row">
+            <div class="column">
+              <div class="card" style="padding: 1em; height: 425px">
+                <img
+                  src="./images/w1.png"
+                  alt="Jane"
+                  style="width: 100%"
+                  height="130px"
+                />
+                <div class="container">
+                  <h2>Jane Doe</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>Small Description</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card" style="padding: 1em; height: 425px">
+                <img
+                  src="./images/w2.jpg"
+                  alt="Mike"
+                  style="width: 100%"
+                  height="130px"
+                />
+                <div class="container">
+                  <h2>Mike Ross</h2>
+                  <p class="title">Art Director</p>
+                  <p>Small Description</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card" style="padding: 1em; height: 425px">
+                <img
+                  src="./images/w3.jpg"
+                  alt="John"
+                  style="width: 100%"
+                  height="130px"
+                />
+                <div class="container">
+                  <h2>John Doe</h2>
+                  <p class="title">Designer</p>
+                  <p>Small Description</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Download App for Android <br />
+              and ios mobile phone
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img
+              src="./images/l.png"
+              alt=""
+              style="height: 5em; width: 5.5em"
+            />
+            <p>Your trust is all we want</p>
+            <p>Find your next vehicle</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="/" style="color: #8a8a8a">Coupons</a></li>
+              <li><a href="/" style="color: #8a8a8a">Blog Post</a></li>
+              <li><a href="/" style="color: #8a8a8a">Return Policy</a></li>
+              <li><a href="/" style="color: #8a8a8a">Join Affiliate</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href="/" style="color: #8a8a8a">Facebook</a></li>
+              <li><a href="/" style="color: #8a8a8a">Twitter</a></li>
+              <li><a href="/" style="color: #8a8a8a">Instagram</a></li>
+              <li><a href="/" style="color: #8a8a8a">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Copyright 2022 -
+          <a href="/" style="color: #8a8a8a"><strong>Car-Max</strong></a>
+        </p>
+      </div>
+    </div>
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

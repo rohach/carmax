@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="icon" href="./images/l.png" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/l.png"
+                alt=""
+                style="width: 4em; height: 3.5em; margin-left: 0.3em"
+              />
+              <br />
+              <strong style="color: #ff523b">Car-Max</strong>
+            </a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="search.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="addcar.html">Add Car</a></li>
+              <li><a href="account.html">Account</a></li>
+              <!-- TODo: 22:20 -->
+            </ul>
+          </nav>
+
+          <img
+            src="images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="heading" style="text-align: center">Type to search Cars!</h1>
+
+      <input type="text" placeholder="search images" id="search-box" />
+
+      <div class="image-container">
+        <div class="image" data-title="Lamborghini">
+          <img src="images/product-1.jpg" alt="" />
+          <h3>Lamborghini</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="image" data-title="Chevrolet Corvette">
+          <img src="images/car-1.jpg" alt="" />
+          <h3>Chevrolet Corvette</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="image" data-title="bmw">
+          <img src="images/product-11.jpg" alt="" />
+          <h3>BMW</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="image" data-title="toyota">
+          <img src="./images/product-3.jpg" alt="" />
+          <h3>Toyota</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="image" data-title="fortuner">
+          <img src="images/product-2.webp" alt="" />
+          <h3>Fortuner</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="image" data-title="cretta">
+          <img src="images/product-12.jpg" alt="" />
+          <h3>Cretta</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Download App for Android <br />
+              and ios mobile phone
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/l.png" alt="" style="width: 5em; height: 4.5em" />
+            <p>
+              Your trust is all we want. <br />
+              Find your next vehicle.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="/" style="color: #8a8a8a">Coupons</a></li>
+              <li><a href="/" style="color: #8a8a8a">Blog Post</a></li>
+              <li><a href="/" style="color: #8a8a8a">Return Policy</a></li>
+              <li><a href="/" style="color: #8a8a8a">Join Affiliate</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href="/" style="color: #8a8a8a">Facebook</a></li>
+              <li><a href="/" style="color: #8a8a8a">Twitter</a></li>
+              <li><a href="/" style="color: #8a8a8a">Instagram</a></li>
+              <li><a href="/" style="color: #8a8a8a">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Copyright 2022 -
+          <a href="/" style="color: #8a8a8a"><strong>Car-Max</strong></a>
+        </p>
+      </div>
+    </div>
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <script>
+      let searchBox = document.querySelector("#search-box");
+      let images = document.querySelectorAll(
+        ".container .image-container .image"
+      );
+
+      searchBox.oninput = () => {
+        images.forEach((hide) => (hide.style.display = "none"));
+        let value = searchBox.value;
+        images.forEach((filter) => {
+          let title = filter.getAttribute("data-title");
+          if (value == title) {
+            filter.style.display = "block";
+          }
+          if (searchBox.value == "") {
+            filter.style.display = "block";
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
